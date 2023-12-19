@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="868dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="409dp"
+                android:layout_height="729dp"
+                android:orientation="vertical">
+                <!--start 1-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:orientation="horizontal">
+
+                    <!--                    app:srcCompat="@drawable/cart"-->
+
+
+                    <ImageView
+                        android:id="@+id/tocart"
+                        android:layout_width="137dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cart" />
+
+                    <LinearLayout
+                        android:layout_width="222dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/counterincart"
+                            android:layout_width="205dp"
+                            android:layout_height="18dp"
+                            android:layout_weight="1"
+                            android:text="0 in cart     "
+                            android:textAlignment="center"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/pricehome"
+                            android:layout_width="207dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0 LE"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_width="104dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/logout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="0dp"
+                        android:layout_height="145dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/powerbank" />
+
+                    <LinearLayout
+                        android:layout_width="92dp"
+                        android:layout_height="125dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/description4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="87dp"
+                                android:layout_weight="1"
+                                android:text="Power Bank "
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/price4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="250"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/buy4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="add"
+                            android:text="Add to cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/charger" />
+
+                    <LinearLayout
+                        android:layout_width="92dp"
+                        android:layout_height="125dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/description3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="87dp"
+                                android:layout_weight="1"
+                                android:text="Anker Charger "
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/price3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="250"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/buy3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="add"
+                            android:text="Add to cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cable" />
+
+                    <LinearLayout
+                        android:layout_width="92dp"
+                        android:layout_height="125dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/description2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="87dp"
+                                android:layout_weight="1"
+                                android:text="Iphone 15 cable "
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/price2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="250"
+                                android:textAlignment="center"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/buy2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="add"
+                            android:text="Add to cart" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
